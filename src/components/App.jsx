@@ -35,9 +35,9 @@ export function App() {
 
     return(
       <>
-       <div className={css.feedback}>
+       <div>
        <Section title={'Please leave feedback'} />
-        <FeedbackOptions options={options}
+        <FeedbackOptions options={options} 
           onLeaveFeedback={updateFeedback} />
         {totalFeedback === 0 ? <Notification message={"There is no feedback :("} /> :
           <Statistics
